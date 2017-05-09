@@ -15,3 +15,17 @@ export class ExponentialStrengthPipe implements PipeTransform {
     return Math.pow(value, isNaN(exp) ? 1 : exp);
   }
 }
+
+
+/*@pipe({
+name :'sort'})
+
+export class SortPipe implements PipeTransform {
+transform(value:any[], args:string): any {
+if(arg === 'asc'){
+ return value.sort();
+ }else if(arg === 'desc'){
+  return value.sort().reverse();
+  }
+  }
+*/
