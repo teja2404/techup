@@ -16,8 +16,11 @@ import { VersionChildComponent } from './version-child.component';
 import { VersionParentComponent } from './version-parent.component';
 import { VoterComponent } from './voter.component';
 import { VoteTakerComponent } from './votetaker.component';
+import { HeroBirthday2Component } from './pipes/pipes.component';
 
 import { SharedService} from './datasharing/sharedservice';
+import { PowerBoostCalculatorComponent } from './pipes/powerbooster.component';
+import { ExponentialStrengthPipe } from './pipes/exponential-power.pipes';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { SharedService} from './datasharing/sharedservice';
     VersionChildComponent,
     VersionParentComponent,
     VoterComponent,
-    VoteTakerComponent
+    VoteTakerComponent,
+    HeroBirthday2Component,
+    PowerBoostCalculatorComponent,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule,
